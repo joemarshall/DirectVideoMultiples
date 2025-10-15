@@ -13,3 +13,4 @@ The answer I discover is that you can play back videos until you hit the fixed l
 3) Sum all the decoder block counts up to get your total per frame block size. If this is greater than 278528, you won't be able to run this configuration on Quest.
 
 There appear to be some other limits in the Qualcomm code, but I couldn't hit them before I hit this limit, and I'm not quite sure how to query them otherwise. If you're interested in delving into the Qualcomm code, you can see it in the Linux kernel here: [msm_vidc_driver.h](https://github.com/HELLBOY017/kernel_nothing_sm8475/blob/1e9dd6b500785e043314bc71bcb4255d418fd68c/techpack/video/driver/vidc/inc/msm_vidc_driver.h). 
+[msm_vidc_sa8775p.c](https://github.com/qualcomm-linux/video-driver/blob/261788d3aed3cb50fad5f74d3e82318cc5952bc9/platform/sa8775p/src/msm_vidc_sa8775p.c#L229)
